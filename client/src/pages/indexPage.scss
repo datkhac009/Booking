@@ -83,22 +83,21 @@ $maxWidth: 1170px;
 
             .menu__list__product {
                 display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: flex-end;
                 flex-direction: row;
-                a{
+                gap: 1rem;
+
+                a {
                     color: #fff;             
                     
                     font-size: 14px;
-                    padding: 0px 10px;
                 }
             }
         }
     }
 
-    .header__banner{
-        img{
-            width: 1000px;
-        }
-    }
 }
 .main{
     .main__items{

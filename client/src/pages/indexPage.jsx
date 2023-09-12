@@ -31,7 +31,15 @@ const indexPage = () => {
         { name: 'Visa', href: '#' },
         { name: 'Combo', href: '#' },
         { name: 'Flash Sale', href: '#' },
-    ])
+    ]);
+
+    // const listBannerImage = () => {
+    //     for (let i = 0; i < 4; i++) {
+    //         return (
+    //             <SwiperSlide><img src={'https://source.unsplash.com/random/1920x540/?japan?' + i} alt='Null'></img></SwiperSlide>
+    //         )
+    //     }
+    // }
 
     return (
         <>
@@ -55,13 +63,10 @@ const indexPage = () => {
                 <div className='header'>
                     <div className='header__menu__container'>
                         <div className='header__menu'>
-                            <div className='header__bar'>
-                                Bar
-                            </div>
-                            <div className='header__logo'>
-                                Logo
-                            </div>
-                            <div className='header__menu__list'>
+                            <div className='header__bar text-white'>Bar</div>
+                            <div className='header__logo text-white'>Logo</div>
+
+                            <div className='header__menu__list ml-auto'>
                                 <ul className='menu__list__product'>
                                     {listProducts.current.map((item, index) => {
                                         return (
@@ -92,7 +97,8 @@ const indexPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='header__banner'>
+
+                    <div className='header__banner mb-3 h-[540px]'>
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={30}
@@ -105,13 +111,23 @@ const indexPage = () => {
                             className="mySwiper"
                         >
                             
-                            <SwiperSlide><img src='https://bizweb.dktcdn.net/100/438/408/files/anh-co-4-la-yody-vn.jpg?v=1683597022341' alt='Null'></img></SwiperSlide>
                             
                             {/* /src/assets/img/banner */}
-                            <SwiperSlide><img src='/src/assets/img/banner1.png' alt='Null'></img></SwiperSlide>
-                            <SwiperSlide><img src='/src/assets/img/banner2.png' alt='Null'></img></SwiperSlide>
-                            <SwiperSlide><img src='/src/assets/img/banner3.png' alt='Null'></img></SwiperSlide>
-                            <SwiperSlide><img src='/src/assets/img/banner4.png' alt='Null'></img></SwiperSlide>
+
+                            {/* loop one to four images with SwiperSlide */}
+
+                            { Array.from(Array(4), (e, index) => {
+                                return (
+                                    <SwiperSlide key={index}>
+                                        <img src={'https://source.unsplash.com/random/1920x540/?japan?' + index} alt='Null' />
+                                    </SwiperSlide>
+                                )
+                            }) }
+
+                            {/* <SwiperSlide><img decoding='async' loading='lazy' width={1920} height={540} className='w-full h-auto' src='https://source.unsplash.com/random/1920x540/?japan?1' alt='Null'></img></SwiperSlide>
+                            <SwiperSlide><img decoding='async' loading='lazy' width={1920} height={540} className='w-full h-auto' src='https://source.unsplash.com/random/1920x540/?japan?2' alt='Null'></img></SwiperSlide>
+                            <SwiperSlide><img decoding='async' loading='lazy' width={1920} height={540} className='w-full h-auto' src='https://source.unsplash.com/random/1920x540/?japan?3' alt='Null'></img></SwiperSlide>
+                            <SwiperSlide><img decoding='async' loading='lazy' width={1920} height={540} className='w-full h-auto' src='https://source.unsplash.com/random/1920x540/?japan?4' alt='Null'></img></SwiperSlide> */}
 
                         </Swiper>
                     </div>
