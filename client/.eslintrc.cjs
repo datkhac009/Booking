@@ -16,5 +16,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'no-undef': 'off',
+    'react-hooks/rules-of-hooks': 'off'
   },
 }

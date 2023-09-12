@@ -6,19 +6,33 @@ a {
     text-decoration: none;
 }
 
+$maxWidth: 1170px;
+
 .top__menu {
     display: flex;
-    width: 1170px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+    max-width: $maxWidth;
+    width: 100%;
+    height: auto;
+
+    margin: auto;
+    padding: 0 15px;
 
     .top__menu__list {
         display: flex;
-        padding-right: 15px;
-        padding-left: 15px;
+        flex-flow: row wrap;
+        gap: 1.75rem;
+
         margin-right: auto;
-        margin-left: auto;
 
         li {
-            margin: 0px 16px;
+            display: block;
+            position: relative;
 
             a {
                 font-size: 12px;
@@ -41,28 +55,45 @@ a {
 .header {
     width: 100%;
 
-    .header__menu {
-        width: 100%;
-        display: flex;
+    .header__menu__container {
+        display: block;
+        position: relative;
         background: #0064d2;
-        padding-left: 188px;
-        column-gap: 90px;
-        line-height: 60px;
-        .header__bar {}
 
-        .header__logo {}
 
-        .menu__list__product {
+        .header__menu {
             display: flex;
-            flex-direction: row;
-            a{
-                color: #fff;             
-                
-                font-size: 14px;
-                padding: 0px 10px;
+            flex-flow: row wrap;
+            gap: 1.75rem;
+
+            position: relative;
+
+            max-width: $maxWidth;
+            width: 100%;
+            height: auto;
+
+            margin: auto;
+            padding: 0 15px;
+
+            line-height: 60px;
+
+            .header__bar {}
+
+            .header__logo {}
+
+            .menu__list__product {
+                display: flex;
+                flex-direction: row;
+                a{
+                    color: #fff;             
+                    
+                    font-size: 14px;
+                    padding: 0px 10px;
+                }
             }
         }
     }
+
     .header__banner{
         img{
             width: 1000px;
