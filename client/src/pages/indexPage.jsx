@@ -1,7 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-
+import { Swiper, SwiperSlide } from 'swiper/react';
 import './indexPage.scss';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import './swiper.css'
+// import required modules
+import { Pagination, Navigation } from 'swiper/modules';
 class indexPage extends Component {
     render() {
         return (
@@ -65,6 +72,69 @@ class indexPage extends Component {
                                 </ul>
                             </div>
                         </div>
+                        <div className='header__banner'>
+                            <Swiper
+                                slidesPerView={1}
+                                spaceBetween={30}
+                                loop={true}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                navigation={true}
+                                modules={[Pagination, Navigation]}
+                                className="mySwiper"
+                            >
+
+                                <SwiperSlide><img src='/client/imgbanner/banner.png' alt='Null'></img></SwiperSlide>
+                                <SwiperSlide><img src='../img/imgbanner/banner2.png' alt='Null'></img></SwiperSlide>
+                                <SwiperSlide><img src='../img/imgbanner/banner3.png' alt='Null'></img></SwiperSlide>
+                                <SwiperSlide><img src='../img/imgbanner/banner4.png' alt='Null'></img></SwiperSlide>
+ 
+                            </Swiper>
+                        </div>
+                    </div>
+                    <div className='main'>
+                                <div className='main__tour'>
+                                    <div className='main__items'>
+                                        <div className='item'>
+                                            <div className='item__img'>
+                                                <img src='../img/items.jpg' alt='Null'></img>
+                                                <p>00 ngày 00:00:00 - 9 chỗ</p>
+                                            </div>
+                                            <div className='item__country'>
+                                                <p>Miền Bắc,Sapa</p>
+                                            </div>
+                                            <div className='item__content'>
+                                                <p>Tour Sapa 3 ngày 2 đêm | Moana – Fansipan – Bản Cát Cát</p>
+                                                <p>3 ngày 2 đêm</p>
+                                                <p>Hà nội</p>
+                                                <p>KH: Hằng ngày</p>
+                                                <div className='item__price'>
+                                                    <p>2,760,000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='item'>
+                                            <div className='item__img'>
+                                                <img src='../img/items.jpg' alt='Null'></img>
+                                                <p>00 ngày 00:00:00 - 9 chỗ</p>
+                                            </div>
+                                            <div className='item__country'>
+                                                <p>Miền Bắc,Sapa</p>
+                                            </div>
+                                            <div className='item__content'>
+                                                <p>Tour Sapa 3 ngày 2 đêm | Moana – Fansipan – Bản Cát Cát</p>
+                                                <p>3 ngày 2 đêm</p>
+                                                <p>Hà nội</p>
+                                                <p>KH: Hằng ngày</p>
+                                                <div className='item__price'>
+                                                    <p>2,760,000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                     </div>
                 </div>
             </>
