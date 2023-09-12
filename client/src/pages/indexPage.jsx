@@ -98,12 +98,17 @@ const indexPage = () => {
                         </div>
                     </div>
 
-                    <div className='header__banner mb-3 h-[540px]'>
+                    <div className='header__banner mb-3'>
                         <Swiper
                             slidesPerView={1}
-                            spaceBetween={30}
+                            spaceBetween={0}
                             loop={true}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
                             pagination={{
+                                dynamicBullets: true,
                                 clickable: true,
                             }}
                             navigation={true}
@@ -119,7 +124,7 @@ const indexPage = () => {
                             { Array.from(Array(4), (e, index) => {
                                 return (
                                     <SwiperSlide key={index}>
-                                        <img src={'https://source.unsplash.com/random/1920x540/?japan?' + index} alt='Null' />
+                                        <img src={'https://source.unsplash.com/random/1920x680/?japan?' + index} alt='Null' />
                                     </SwiperSlide>
                                 )
                             }) }
@@ -137,7 +142,7 @@ const indexPage = () => {
                         <div className='main__items'>
                             <div className='item'>
                                 <div className='item__img'>
-                                    <img src='../img/items.jpg' alt='Null'></img>
+                                    <img src='/src/assets/img/items.jpg' alt='Null'></img>
                                     <p>00 ngày 00:00:00 - 9 chỗ</p>
                                 </div>
                                 <div className='item__country'>
