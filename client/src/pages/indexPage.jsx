@@ -78,35 +78,23 @@ const indexPage = () => {
                                             </li>
                                         )
                                     })}
-                                    {/* <li>
-                                        <a href='#'>Vé máy bay</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Du lịch</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Khách sạn</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Visa</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Combo</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Flash Sale</a>
-                                    </li> */}
+
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div className='header__banner mb-3 h-[350px]'>
+                    <div className='header__banner mb-3 '>
                         <Swiper
                             slidesPerView={1}
-                            spaceBetween={30}
+                            spaceBetween={0}
                             loop={true}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
                             pagination={{
+                                dynamicBullets: true,
                                 clickable: true,
 
                             }}
@@ -120,7 +108,7 @@ const indexPage = () => {
                             {Array.from(Array(4), (e, index) => {
                                 return (
                                     <SwiperSlide key={index}>
-                                        <img src={'https://source.unsplash.com/random/1920x300/?japan?' + index} alt='Null' />
+                                        <img src={'https://source.unsplash.com/random/1920x340/?japan?' + index} alt='Null' />
                                     </SwiperSlide>
                                 )
                             })}
@@ -138,7 +126,7 @@ const indexPage = () => {
                         <div className='main__items'>
                             <div className='item'>
                                 <div className='item__img'>
-                                    <img src='https://source.unsplash.com/random/300x194/?Vietnam' alt='Null'></img>
+                                    <img src='https://source.unsplash.com/random/300x194/?Hanoi' alt='Null'></img>
                                     <h3>Tham quan Moana,Fansipan,Bản Cát Cát</h3>
                                     <p>00 ngày 00:00:00 - 9 chỗ</p>
                                 </div>
@@ -190,7 +178,7 @@ const indexPage = () => {
                                         <p>KH: Hằng ngày</p>
                                     </div>
                                     <div className='item__price'>
-                                        <p>2,760,000</p>
+                                        <p>2,760,000 <sup>đ</sup></p>
                                     </div>
                                 </div>
                             </div>
