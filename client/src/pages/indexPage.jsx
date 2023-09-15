@@ -123,6 +123,7 @@ const indexPage = () => {
                 </div>
                 <div className='main'>
                     <div className='main__tour'>
+                        <h2>Tour giờ chốt</h2>
                         <div className='main__items'>
                             <div className='item'>
                                 <div className='item__img'>
@@ -179,6 +180,41 @@ const indexPage = () => {
                                     </div>
                                     <div className='item__price'>
                                         <p>2,760,000 <sup>đ</sup></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='main_tourcombo'>
+                        <h2>Combo Khách sạn + Vé máy bay ưu dãi</h2>
+                        <div className='main__items__combo'>
+                            <div className='item__combo'>
+                                <div className='item__img'>
+                                    <img src='https://source.unsplash.com/random/300x194/?Spain' alt='Null'></img>
+
+                                </div>
+                                <div className='item__title__combo'>
+                                    <p>Combo vé máy bay và khách sạn Phú quốc</p>
+                                    <div className='item__price__combo'>
+                                        <p>Từ 299.000 VNĐ</p>
+                                        <div className='item__btn'>
+                                            <a href='#'>Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item__combo'>
+                                <div className='item__img'>
+                                    <img src='https://source.unsplash.com/random/300x194/?Dubai' alt='Null'></img>
+
+                                </div>
+                                <div className='item__title__combo'>
+                                    <p>Combo vé máy bay và khách sạn Phú quốc</p>
+                                    <div className='item__price__combo'>
+                                        <p>Từ 299.000 VNĐ</p>
+                                        <div className='item__btn'>
+                                            <a href='#'>Chi tiết</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

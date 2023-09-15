@@ -93,8 +93,19 @@ $maxWidth: 1170px;
     }
 
 }
-.main{
-    .main__items{
+
+.main {
+
+    .main__tour h2,
+    .main_tourcombo h2 {
+        text-align: center;
+        font-size: 28px;
+    color: #15284a;
+    font-family: 'os_semi_bold';
+    margin: 40px 0;
+    }
+
+    .main__items {
         width: 1000px;
         display: flex;
         justify-content: space-between;
@@ -154,6 +165,7 @@ $maxWidth: 1170px;
                 color: #5c5c5c;
                 font-family: 'r_conde_regular';
                 padding: 0px 10px;
+
                 p:nth-child(1) {
                     overflow: hidden;
                     height: 33px;
@@ -162,7 +174,8 @@ $maxWidth: 1170px;
                     color: #000000;
                     font-family: 'r_conde_regular';
                 }
-                .item__price p{
+
+                .item__price p {
                     text-align: end;
                     padding-right: 2rem;
                     font-size: 24px;
@@ -174,8 +187,74 @@ $maxWidth: 1170px;
             }
         }
 
-        .item{
+        .item {
             background: #f1f1f1;
+        }
+    }
+
+    .main_tourcombo {
+        .main__items__combo {
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            margin-right: auto;
+            margin-left: auto;
+
+            .item__combo {
+                border-radius: 8px;
+                box-shadow: 4px 8px 23px 0 rgba(215, 220, 230, 0.72);
+                background: #fff;
+
+                img {
+
+                    width: 380px;
+                }
+
+                .item__title__combo {
+                    >p {
+                        color: #15284a;
+                        display: inline-block;
+                        width: 100%;
+                        line-height: 40px;
+                        line-height: 1.56;
+                        padding: 20px;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+                    .item__price__combo {
+                        display: flex;
+                        border-top: 1px solid rgba(212, 214, 217, 0.44);
+                        padding-top: 20px;
+                        background: #fff;
+                        justify-content: space-around;
+                        padding: 18px 0;
+                        >p{
+                            font-family: 'os_semi_bold';
+    color: red;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+                        }
+                        .item__btn {
+                            >a{
+                                border-radius: 5px;
+                                background-color: #0064d2;
+                                display: block;
+                                font-size: 14px;
+                                font-family: 'os_semi_bold';
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                max-width: 120px;
+                                text-align: center;
+                                color: #fff;
+                                line-height: 35px;
+                                width: 120px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
