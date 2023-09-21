@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './swiper.css'
 
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, FreeMode } from 'swiper/modules';
 
 import { useRef } from 'react';
 import { BsCalendar3, BsClockFill, BsFillGeoAltFill, BsList } from "react-icons/bs";
@@ -31,6 +31,16 @@ const indexPage = () => {
         { name: 'Combo', href: '#' },
         { name: 'Flash Sale', href: '#' },
     ]);
+    const listBrand = useRef([
+        { img: 'https://www.vietnambooking.com/wp-content/uploads/2019/08/top-20-famous-brand-2019.png', title: 'Giải thưởng', description: 'Top 20 thương hiệu nổi tiếng hàng đầu 2019' },
+        { img: '	https://www.vietnambooking.com/wp-content/uploads/2019/05/01.png', title: 'Giải thưởng', description: 'Top 20 thương hiệu nổi tiếng hàng đầu 2019' },
+        { img: '	https://www.vietnambooking.com/wp-content/uploads/2019/05/02.png', title: 'Giải thưởng', description: 'Top 20 thương hiệu nổi tiếng hàng đầu 2019' },
+        { img: 'https://www.vietnambooking.com/wp-content/uploads/2019/05/03.png', title: 'Giải thưởng', description: 'Top 20 thương hiệu nổi tiếng hàng đầu 2019' },
+        { img: '	https://www.vietnambooking.com/wp-content/uploads/2019/05/04.png', title: 'Giải thưởng', description: 'Top 20 thương hiệu nổi tiếng hàng đầu 2019' },
+        { img: 'https://www.vietnambooking.com/wp-content/uploads/2019/05/05.png', title: 'Giải thưởng', description: 'Top 20 thương hiệu nổi tiếng hàng đầu 2019' },
+        { img: 'https://www.vietnambooking.com/wp-content/uploads/2019/05/06.png', title: 'Giải thưởng', description: 'Top 20 thương hiệu nổi tiếng hàng đầu 2019' }
+
+    ])
 
     // const listBannerImage = () => {
     //     for (let i = 0; i < 4; i++) {
@@ -219,6 +229,148 @@ const indexPage = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className='main__banner'>
+                        <div className='content__app'>
+                            <h3>Tải ngay ứng dụng</h3>
+                            <h2>Vietnam Booking</h2>
+                            <h4>Dịch vụ vé bay - khách sạn - du lịch hàng đầu Việt Nam. <br /> Mang cả thế giới nằm trọn trong tay!</h4>
+                            <div className='link__app flex gap-3 my-4'>
+                                <a href='#'>
+                                    <img src='https://data.vietnambooking.com/common/icon/apps/icon_playstore.png' alt='Null' />
+                                </a>
+                                <a href='#'>
+                                    <img src='https://data.vietnambooking.com/common/icon/apps/icon_appstore.png' alt='Null' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='main__achievement'>
+                        <div className='main__achievement__box'>
+                            <h3 className='title'>Thành tựu & giải thưởng</h3>
+                            <div className='type__channel'>
+                                <Swiper slidesPerView={6}
+                                    spaceBetween={30}
+                                    freeMode={true}
+                                    pagination={{
+                                        clickable: true,
+                                    }}
+                                    modules={[FreeMode, Pagination]} className="mySwiper">
+                                    {listBrand.current.map((item, index) => {
+                                        return <div key={index}>
+                                            <SwiperSlide>
+                                                <div className='box flex flex-col items-center'>
+                                                    <img src={item.img} />
+                                                    <h3 className='my-2 font-bold' >{item.title}</h3>
+                                                    <p className='text-[12px] text-[#797b7c] pb-10'>{item.description}</p>
+                                                </div>
+                                            </SwiperSlide>
+                                        </div>
+                                    })}
+                                </Swiper>
+
+                            </div>
+                        </div>
+                        <div className='main__achievement__box'>
+                            <h3 className='title'>Vietnam Booking đã được nhắc đến trên</h3>
+                            <div className='type__channel'>
+                                <Swiper slidesPerView={6}
+                                    spaceBetween={30}
+                                    freeMode={true}
+                                    pagination={{
+                                        clickable: true,
+                                    }}
+                                    modules={[FreeMode, Pagination]} className="mySwiper">
+                                    {listBrand.current.map((item, index) => {
+                                        return <div key={index}>
+                                            <SwiperSlide>
+                                                <div className='box flex flex-col items-center'>
+                                                    <img src={item.img} />
+                                                </div>
+                                            </SwiperSlide>
+                                        </div>
+                                    })}
+                                </Swiper>
+
+                            </div>
+                        </div>
+                        <div className='main__achievement__box'>
+                            <h3 className='title'>Đối tác thanh toán</h3>
+                            <div className='type__channel'>
+                                <Swiper slidesPerView={6}
+                                    spaceBetween={30}
+                                    freeMode={true}
+                                    pagination={{
+                                        clickable: true,
+                                    }}
+                                    modules={[FreeMode, Pagination]} className="mySwiper">
+                                    {listBrand.current.map((item, index) => {
+                                        return <div key={index}>
+                                            <SwiperSlide>
+                                                <div className='box flex flex-col items-center'>
+                                                    <img src={item.img} />
+                                                </div>
+                                            </SwiperSlide>
+                                        </div>
+                                    })}
+                                </Swiper>
+
+                            </div>
+                        </div>
+                        <div className='main__achievement__box'>
+                            <h3 className='title'>Đối tác hàng không</h3>
+                            <p>Quan hệ hợp tác với nhiều hãng hàng không trong khu vực và trên thế giới. <br />
+                                                        Chúng tôi nỗ lực đáp ứng nhu cầu đa dạng của hành khách đi tới các địa điểm trên toàn cầu.</p>
+                            <div className='type__channel'>
+                                <Swiper slidesPerView={6}
+                                    spaceBetween={30}
+                                    freeMode={true}
+                                    pagination={{
+                                        clickable: true,
+                                    }}
+                                    modules={[FreeMode, Pagination]} className="mySwiper">
+                                    {listBrand.current.map((item, index) => {
+                                        return <div key={index}>
+                                            <SwiperSlide>
+                                                <div className='box flex flex-col items-center'>
+                                                    <img src={item.img} />
+                                                
+                                                </div>
+                                            </SwiperSlide>
+                                        </div>
+                                    })}
+                                </Swiper>
+
+                            </div>
+                        </div>
+                        <div className='main__achievement__box'>
+                            <h3 className='title'>Đối tác khách sạn</h3>
+                            <p>Quan hệ hợp tác với nhiều hãng hàng không trong khu vực và trên thế giới. <br />
+                                                        Chúng tôi nỗ lực đáp ứng nhu cầu đa dạng của hành khách đi tới các địa điểm trên toàn cầu.</p>
+                            <div className='type__channel'>
+                                <Swiper slidesPerView={6}
+                                    spaceBetween={30}
+                                    freeMode={true}
+                                    pagination={{
+                                        clickable: true,
+                                    }}
+                                    modules={[FreeMode, Pagination]} className="mySwiper">
+                                    {listBrand.current.map((item, index) => {
+                                        return <div key={index}>
+                                            <SwiperSlide>
+                                                <div className='box flex flex-col items-center'>
+                                                    <img src={item.img} />
+                                                </div>
+                                            </SwiperSlide>
+                                        </div>
+                                    })}
+                                </Swiper>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className='main__promotion mt-6'>
+                        <h2>KHUYỄN MÃI HOT THÁNG 9/2023</h2>
                     </div>
                 </div>
             </div>
