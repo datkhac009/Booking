@@ -320,4 +320,59 @@ $maxWidth: 1170px;
         }
     }
 
+    .main__title {
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'r_conde_regular';
+            margin-bottom: 30px;
+            margin-top: 0px;
+        }
+
+        .box__title {
+            width: 45%;
+            margin: auto;
+
+            .childbox {
+                margin: 40px 0;
+            }
+        }
+    }
+}
+.footer{
+    background: #0c121c;
+    padding-top: 30px;
+    color: #fff;
+    .footer__box__menu{
+        display: flex;
+        width: 1170px;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+    .footer__address{
+        .box__address{
+          .footer__box__address{
+            .adress{
+                line-height: 33px;
+                .address__HCM {
+                    p{
+                    
+                        &::before{
+                            content: "♥";
+                           margin-right: 6px; 
+                        }
+                    }
+                }
+            }
+          }  
+
+        }
+    }
+    .footer__copyright{
+        width: 100%;
+    line-height: 22px;
+    background: #0d192e;
+    text-align: center;
+    padding: 22px 0;
+}
 }

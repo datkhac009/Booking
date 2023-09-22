@@ -46,7 +46,7 @@ const indexPage = () => {
     //     for (let i = 0; i < 4; i++) {
     //         return (
     //             <SwiperSlide><img src={'https://source.unsplash.com/random/1920x540/?japan?' + i} alt='Null'></img></SwiperSlide>
-    //         )
+    //         )~
     //     }
     // }
 
@@ -320,7 +320,7 @@ const indexPage = () => {
                         <div className='main__achievement__box'>
                             <h3 className='title'>Đối tác hàng không</h3>
                             <p>Quan hệ hợp tác với nhiều hãng hàng không trong khu vực và trên thế giới. <br />
-                                                        Chúng tôi nỗ lực đáp ứng nhu cầu đa dạng của hành khách đi tới các địa điểm trên toàn cầu.</p>
+                                Chúng tôi nỗ lực đáp ứng nhu cầu đa dạng của hành khách đi tới các địa điểm trên toàn cầu.</p>
                             <div className='type__channel'>
                                 <Swiper slidesPerView={6}
                                     spaceBetween={30}
@@ -334,7 +334,7 @@ const indexPage = () => {
                                             <SwiperSlide>
                                                 <div className='box flex flex-col items-center'>
                                                     <img src={item.img} />
-                                                
+
                                                 </div>
                                             </SwiperSlide>
                                         </div>
@@ -346,7 +346,7 @@ const indexPage = () => {
                         <div className='main__achievement__box'>
                             <h3 className='title'>Đối tác khách sạn</h3>
                             <p>Quan hệ hợp tác với nhiều hãng hàng không trong khu vực và trên thế giới. <br />
-                                                        Chúng tôi nỗ lực đáp ứng nhu cầu đa dạng của hành khách đi tới các địa điểm trên toàn cầu.</p>
+                                Chúng tôi nỗ lực đáp ứng nhu cầu đa dạng của hành khách đi tới các địa điểm trên toàn cầu.</p>
                             <div className='type__channel'>
                                 <Swiper slidesPerView={6}
                                     spaceBetween={30}
@@ -372,7 +372,126 @@ const indexPage = () => {
                     <div className='main__promotion mt-6'>
                         <h2>KHUYỄN MÃI HOT THÁNG 9/2023</h2>
                     </div>
+                    <div className='main__title'>
+                        <h3>Tại sao nên đặt chỗ với Vietnam Booking ?</h3>
+                        <div className='box__title'>
+                            <div className='childbox flex items-center gap-8'>
+                                <img src='https://www.vietnambooking.com/wp-content/themes/vietnambooking_master/images/index/mobile/svg/booking.svg' alt='Null' width="120px" height="120px" />
+                                <p className='font-medium text-[13px]'>	Là đại lý chính thức của Vietnam Airlines, Vietjet Air, Pacific Airlines, đạt danh hiệu của <br /> IATA kết nối với hơn 200 hãng hàng không quốc tế. Đa dạng cách thức mua và thanh <br /> toán từ trực tuyến đến trực tiếp tại văn phòng ở cả ba miền.</p>
+                            </div>
+                            <div className='childbox flex items-center gap-8 flex-row-reverse'>
+                                <img src='https://www.vietnambooking.com/wp-content/themes/vietnambooking_master/images/index/mobile/svg/booking.svg' alt='Null' width="120px" height="120px" />
+                                <p className='font-medium text-[13px]'>	Là đại lý chính thức của Vietnam Airlines, Vietjet Air, Pacific Airlines, đạt danh hiệu của <br /> IATA kết nối với hơn 200 hãng hàng không quốc tế. Đa dạng cách thức mua và thanh <br /> toán từ trực tuyến đến trực tiếp tại văn phòng ở cả ba miền.</p>
+                            </div>
+                            <div className='childbox flex items-center gap-8'>
+                                <img src='https://www.vietnambooking.com/wp-content/themes/vietnambooking_master/images/index/mobile/svg/booking.svg' alt='Null' width="120px" height="120px" />
+                                <p className='font-medium text-[13px]'>	Là đại lý chính thức của Vietnam Airlines, Vietjet Air, Pacific Airlines, đạt danh hiệu của <br /> IATA kết nối với hơn 200 hãng hàng không quốc tế. Đa dạng cách thức mua và thanh <br /> toán từ trực tuyến đến trực tiếp tại văn phòng ở cả ba miền.</p>
+                            </div>
+                            <div className='childbox flex items-center gap-8 flex-row-reverse'>
+                                <img src='https://www.vietnambooking.com/wp-content/themes/vietnambooking_master/images/index/mobile/svg/booking.svg' alt='Null' width="120px" height="120px" />
+                                <p className='font-medium text-[13px]'>	Là đại lý chính thức của Vietnam Airlines, Vietjet Air, Pacific Airlines, đạt danh hiệu của <br /> IATA kết nối với hơn 200 hãng hàng không quốc tế. Đa dạng cách thức mua và thanh <br /> toán từ trực tuyến đến trực tiếp tại văn phòng ở cả ba miền.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div className='footer'>
+                    <div className='footer__box__menu'>
+                        <div className='box__menu'>
+                            <div className='box__title'>
+                                <h4>Liên hệ với chúng tôi<span>(Hỗ trợ 24/7)</span></h4>
+                            </div>
+                            <ul>
+                                <li><a href='#'>Đặt vé máy bay: 028 7303 6167</a></li>
+                                <li><a href='#'>Đặt Tour du lịch: 1900 3398</a></li>
+                                <li><a href='#'>Đặt phòng khách sạn: 028 7303 6167</a></li>
+                                <li><a href='#'>Tư vấn xin Visa: 1900 3498</a></li>
+                                <li><a href='#'>Tổng đài hỗ trợ gọi từ nước ngoài về Việt Nam</a></li>
+                                <li><a href='#'>+8428 7303 6167</a></li>
+                            </ul>
+                        </div>
+                        <div className='box__menu'>
+                            <div className='box__title'>
+                                <h4>Về chúng tôi</h4>
+                            </div>
+                            <ul>
+                                <li><a href='#'>Giới thiệu</a></li>
+                                <li><a href='#'>Liên hệ</a></li>
+                                <li><a href='#'>Truyền thông</a></li>
+                                <li><a href='#'>Các đơn vị hợp tác</a></li>
+                                <li><a href='#'>Chính sách bảo mật</a></li>
+                                <li><a href='#'>Điều khoản sử dụng</a></li>
+                            </ul>
+                        </div>
+                        <div className='box__menu'>
+                            <div className='box__title'>
+                                <h4>Sản phẩm</h4>
+                            </div>
+                            <ul>
+                                <li><a href='#'>Giới thiệu</a></li>
+                                <li><a href='#'>Liên hệ</a></li>
+                                <li><a href='#'>Truyền thông</a></li>
+                                <li><a href='#'>Các đơn vị hợp tác</a></li>
+                                <li><a href='#'>Chính sách bảo mật</a></li>
+                                <li><a href='#'>Điều khoản sử dụng</a></li>
+                            </ul>
+                        </div>
+                        <div className='box__menu'>
+                            <div className='box__title'>
+                                <h4>Khác</h4>
+                            </div>
+                            <ul>
+                                <li><a href='#'>Giới thiệu</a></li>
+                                <li><a href='#'>Liên hệ</a></li>
+                                <li><a href='#'>Truyền thông</a></li>
+                                <li><a href='#'>Các đơn vị hợp tác</a></li>
+                                <li><a href='#'>Chính sách bảo mật</a></li>
+                                <li><a href='#'>Điều khoản sử dụng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className='footer__address flex w-[968px] m-auto gap-12 mt-20'>
+                        <div className='footer__logo'>
+                            <img src='https://data.vietnambooking.com/common/svg/logo_white.svg' alt='Null' />
+                        </div>
+                        <div className='box__address'>
+                            <div className='footer__box__address'>
+                                <div className='adress flex gap-20'>
+                                    <p>Hồ Chí Minh</p>
+                                    <div className='address__HCM'>
+                                        <p>190-192 Trần Quý, Phường 6, Quận 11, Tp. Hồ Chí Minh</p>
+                                        <p> 54 Phạm Hồng Thái, Bến Thành, Quận 1, Tp. Hồ Chí Minh</p>
+                                        <p> 164 Lê Thánh Tôn, Phường Bến Thành, Quận 1, TP. Hồ Chí Minh</p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div className='footer__box__address '>
+                                <div className='adress flex gap-[7.3rem]'>
+                                    <p>Hà nội</p>
+                                    <div className='address__HCM'>
+                                        <p>30 Phan Chu Trinh, Quận Hoàn Kiếm, TP. Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='footer__box__address '>
+                                <div className='adress flex gap-[6.6rem]'>
+                                    <p>Đà nẵng</p>
+                                    <div className='address__HCM'>
+                                        <p>174 Nguyễn Văn Linh, Quận Thanh Khê, TP. Đà Nẵng</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='footer__linkapp'>
+                            
+                    </div>
+                    <div className='footer__copyright mt-[30px]'>
+                          <p>© 2023 Vietnambooking. All rights reserved - Công Ty Cổ Phần Việt Nam Booking - Mã số thuế: 0308042348</p>
+                          <p>Người phụ trách nội dung: Châu Hoài Dung - Trưởng Ban Biên Tập - Email: bientap@vietnambooking.com</p>          
+                    </div>
+                </div>
+
             </div>
         </>
     );
